@@ -15,15 +15,13 @@ body{
     align-items: center;
     border-bottom:1px solid gray ;
     padding: 2rem;
-    position:absolute;
+    position:fixed;
     z-index: 1000;
 }
 .logo{
     font-size: 2rem;
 }
-body html{
-    scroll-behavior: smooth;
-}
+
 .nav-link{
     flex: 1;
     display: flex;
@@ -245,12 +243,11 @@ body html{
     font-size: 2rem;
 }
 .section-3{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
 }
 .card{
-    width: 370px;
     font-size: 1.5rem;
 }
 .card img{
