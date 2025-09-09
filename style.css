@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body{
+    height: 3000px;
+}
+.nav-bar{
+    display: flex;
+    color: white;
+    height: 80px;
+    width: 100vw;
+    align-items: center;
+    border-bottom:1px solid gray ;
+    padding: 2rem;
+    position:absolute;
+    z-index: 1000;
+}
+.logo{
+    font-size: 2rem;
+}
+body html{
+    scroll-behavior: smooth;
+}
+.nav-link{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.nav-link li{
+    list-style: none;
+}
+.nav-link li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-icon{
+    display: flex;
+    gap: 1rem;
+}
+.nav-icon i{
+    cursor: pointer;
+}
+.heading{
+    height: 90vh;
+    background: url(./img/headphone.avif) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.heading-title{
+    text-align: center;
+    margin-top: 5rem;
+}
+.heading-title h1{
+    font-size: 3rem;
+}
+.heading-title p{
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+}
+.heading-btn{
+    border: 2px solid white;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    margin: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+.heading-btn:hover{
+    background-color: red;
+}
+.hero-section{
+    padding: 1rem 4rem;
+}
+.section-title-1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.payment-method{
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.payment-method-card i{
+    font-size: 3rem;
+    color: red;
+}
+.payment-method-card{
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    background-color: rgba(221, 160, 221, 0.619);
+    border-radius: 10px;
+}
+.section-1{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+}
+.section-1-left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.box-1{
+    background: url(./img/headphone2.avif) center no-repeat;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1.5rem;
+}
+.box-1 span{
+    color:chartreuse;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box-2{
+    background-color: red;
+    height: 600px;
+    background: url(./img/headphone3.avif) center no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1.5rem;
+}
+.box-2 span{
+    color: rgb(160, 68, 68);
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box-2 p{
+    font-size: 2rem;
+}
+.box-2 button{
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 8px 16px;
+    background-color: rgba(255,255,255,0.5);
+    transition:background-color 0.2s linea;
+}
+.box-2 button:hover{
+    background-color: white;
+}
+.box-3{
+    background: url(./img/headphone4.avif) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1.5rem;
+    color: white;
+}
+.box-4{
+    background: url(./img/headphone5.avif) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1.5rem;
+    color: white;
+}
+.section-title-2 {
+    margin: 4rem 0;
+    font-size: 2rem;
+}
+.section-2{
+    display: flex;
+    justify-content: space-around;
+    gap: 6rem;
+}
+.keyboard-item{
+    height: 600px;
+    width: 350px;
+    background: url(./img/keyboard.avif) center no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem;
+}
+.console-item{
+    height: 600px;
+    width: 350px;
+    background: url(./img/console.avif) center no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem;
+}
+.audio-item{
+    height: 600px;
+    width: 350px;
+    background: url(./img/audio2.avif) center no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem;
+}
+.mouse-item{
+    height: 600px;
+    width: 350px;
+    background: url(./img/mouse.avif) center no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem;
+}
+.section-2 h3{
+    font-size: 2rem;
+}
+.section-title-3{
+    margin: 4rem 0;
+    font-size: 2rem;
+}
+.section-3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card{
+    width: 370px;
+    font-size: 1.5rem;
+}
+.card img{
+    width: 100%;
+}
+.view-all-product{
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
+
+}
+.view-all-product button{
+    padding: 2rem 2rem;
+    font-size: 2rem;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+    transition: 0.2s linear;
+}
+.view-all-product button:hover{
+    background-color: #222;
+    color: white;
+}
+.subcribe-block{
+    background: url(./img/online-shopping.avif) center no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    font-size: 1.5rem;
+}
+.subcribe-block .btn{
+    display: flex;
+}
+.btn input{
+    border: none;
+    padding: 15px 10px;
+    border-radius: 10px 0 0 10px;
+    font-size: 1.5rem;
+    outline: none;
+}
+.btn button{
+    border: none;
+    padding: 15px 10px;
+    border-radius: 0 10px 10px 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.more-info{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    margin: 4rem;
+}
