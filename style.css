@@ -4,9 +4,7 @@
     box-sizing: border-box;
     font-family: poppins;
 }
-body{
-    height: 3000px;
-}
+
 .nav-bar{
     display: flex;
     color: white;
@@ -19,14 +17,14 @@ body{
     z-index: 1000;
 }
 .logo{
-    font-size: 2rem;
+    font-size: clamp(1.3rem, 2vw,2rem);
 }
-
 .nav-link{
     flex: 1;
     display: flex;
     justify-content: center;
     gap: 2rem;
+    font-size: clamp(0.7rem, 1.5vw,1rem);
 }
 .nav-link li{
     list-style: none;
@@ -38,6 +36,7 @@ body{
 .nav-icon{
     display: flex;
     gap: 1rem;
+    font-size: clamp(0.7rem, 1.5vw,1rem);
 }
 .nav-icon i{
     cursor: pointer;
@@ -56,10 +55,10 @@ body{
     margin-top: 5rem;
 }
 .heading-title h1{
-    font-size: 3rem;
+    font-size: clamp(2rem, 3vw,3rem);
 }
 .heading-title p{
-    font-size: 2rem;
+    font-size: clamp(1rem, 2vw,2rem);
     font-family:'Courier New', Courier, monospace;
 }
 .heading-btn{
@@ -69,7 +68,7 @@ body{
     background-color: transparent;
     color: white;
     margin: 3rem;
-    font-size: 2rem;
+    font-size: clamp(1rem, 2vw,2rem);
     cursor: pointer;
     transition: background-color 0.1s linear;
 }
@@ -77,36 +76,41 @@ body{
     background-color: red;
 }
 .hero-section{
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
 }
 .section-title-1{
+    font-size: clamp(20px, 3vw, 40px);
     text-align: center;
-    font-size: 3rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .payment-method{
-    margin-top: 5rem;
+    margin: 5rem 0;
     display: flex;
-    gap: 2rem;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .payment-method-card i{
-    font-size: 3rem;
+    font-size: clamp(20px, 3vw, 40px);
     color: red;
 }
+
 .payment-method-card{
     display: flex;
     gap: 1rem;
-    padding: 2rem 1rem;
     background-color: rgba(221, 160, 221, 0.619);
     border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: clamp(10px, 1.5vw, 20px);
+
 }
 .section-1{
     margin-top: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-    row-gap: 2rem;
+    gap: 2rem;
     justify-content: center;
 }
 .section-1-left{
@@ -127,7 +131,7 @@ body{
 }
 .box-1 span{
     color:chartreuse;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 1.5vw,2rem);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .box-2{
@@ -142,20 +146,20 @@ body{
     padding: 1.5rem;
 }
 .box-2 span{
+    font-size: clamp(2rem, 3vw,3rem);
     color: rgb(160, 68, 68);
-    font-size: 3rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .box-2 p{
-    font-size: 2rem;
+    font-size: clamp(14px, 2vw,2rem);
 }
 .box-2 button{
     border: 1px solid white;
     border-radius: 5px;
-    font-size: 2rem;
     padding: 8px 16px;
     background-color: rgba(255,255,255,0.5);
     transition:background-color 0.2s linea;
+    font-size: clamp(1rem, 2vw,3rem);
 }
 .box-2 button:hover{
     background-color: white;
@@ -180,16 +184,15 @@ body{
 }
 .section-title-2 {
     margin: 4rem 0;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw,2rem);
 }
 .section-2{
     display: flex;
     justify-content: space-around;
-    gap: 6rem;
 }
 .keyboard-item{
     height: 600px;
-    width: 350px;
+    width: 300px;
     background: url(./img/keyboard.avif) center no-repeat;
     background-size: cover;
     color: white;
@@ -198,10 +201,11 @@ body{
     justify-content: end;
     align-items: center;
     padding: 1rem;
+    font-size: clamp(12px, 1.5vw, 24px);
 }
 .console-item{
     height: 600px;
-    width: 350px;
+    width: 300px;
     background: url(./img/console.avif) center no-repeat;
     background-size: cover;
     color: white;
@@ -210,10 +214,11 @@ body{
     justify-content: end;
     align-items: center;
     padding: 1rem;
+    font-size: clamp(12px, 1.5vw, 24px);
 }
 .audio-item{
     height: 600px;
-    width: 350px;
+    width: 300px;
     background: url(./img/audio2.avif) center no-repeat;
     background-size: cover;
     color: white;
@@ -222,10 +227,11 @@ body{
     justify-content: end;
     align-items: center;
     padding: 1rem;
+    font-size: clamp(12px, 1.5vw, 24px);
 }
 .mouse-item{
     height: 600px;
-    width: 350px;
+    width: 300px;
     background: url(./img/mouse.avif) center no-repeat;
     background-size: cover;
     color: white;
@@ -234,21 +240,21 @@ body{
     justify-content: end;
     align-items: center;
     padding: 1rem;
+    font-size: clamp(12px, 1.5vw, 24px);
 }
-.section-2 h3{
-    font-size: 2rem;
-}
+
 .section-title-3{
     margin: 4rem 0;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw,2rem);
 }
 .section-3{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .card{
-    font-size: 1.5rem;
+    width: 300px;
 }
 .card img{
     width: 100%;
@@ -256,12 +262,12 @@ body{
 .view-all-product{
     display: flex;
     justify-content: center;
-    margin: 4rem;
+    margin: 4rem 0;
 
 }
 .view-all-product button{
     padding: 2rem 2rem;
-    font-size: 2rem;
+    font-size: clamp(1rem, 2vw,2rem);
     background-color: transparent;
     border: 1px solid gray;
     border-radius: 5px;
@@ -277,10 +283,10 @@ body{
     height: 400px;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 5rem;
     font-size: 1.5rem;
+    font-size: clamp(12px, 1.5vw, 24px);
 }
 .subcribe-block .btn{
     display: flex;
@@ -289,19 +295,35 @@ body{
     border: none;
     padding: 15px 10px;
     border-radius: 10px 0 0 10px;
-    font-size: 1.5rem;
     outline: none;
+    font-size: clamp(12px, 1.5vw, 24px);
 }
 .btn button{
     border: none;
     padding: 15px 10px;
     border-radius: 0 10px 10px 0;
-    font-size: 1.5rem;
     cursor: pointer;
+    font-size: clamp(12px, 1.5vw, 24px);
 }
 .more-info{
     display: flex;
     justify-content: space-around;
-    gap: 3rem;
-    margin: 4rem;
+    margin: 4rem 0;
+    flex-wrap: wrap;
+    font-size: clamp(0.7rem, 1.5vw,1rem);
+}
+@media only screen and (max-width: 800px){
+    .nav-link{
+        display: none;
+    }
+    .nav-bar{
+        justify-content: space-between;
+    }
+    .section-1{
+        gap: 8px;
+    }
+    .box-2{
+        padding: 0.5rem;
+        height: 400px;
+    }
 }
